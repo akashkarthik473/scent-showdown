@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Scent Showdown</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Scent Showdown</h1>
+        <h2 class="text-center">Which Fragrance Has The Better Bottle?</h2>
+        <div class="row g-4" id="poll-container">
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <h5 class="card-title text-center">Option 1</h5>
+                    <img id="option1-img" src="https://fimgs.net/mdimg/perfume/375x500.{{ ids[0] }}.jpg" alt="Option 1 Image" class="card-img-top img-fluid custom-img">
+                    <div class="card-body text-center">
+                        <button class="btn btn-primary custom-button" id="option1-btn" data-id="{{ ids[0] }}">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <h5 class="card-title text-center">Option 2</h5>
+                    <img id="option2-img" src="https://fimgs.net/mdimg/perfume/375x500.{{ ids[1] }}.jpg" alt="Option 2 Image" class="card-img-top img-fluid custom-img">
+                    <div class="card-body text-center">
+                        <button class="btn btn-primary custom-button" id="option2-btn" data-id="{{ ids[1] }}">Select</button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center">How to play</h2>
+            <p class="text-center">Pick the fragrance you think looks cooler. Last one standing wins!</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $("#option1-btn, #option2-btn").click(function() {
+        const votedId = $(this).data("id");
+        const displayedIds = [
+            $("#option1-btn").data("id"),
+            $("#option2-btn").data("id")
+        ];
+
+        $.ajax({
+            url: "/save_vote",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ image_id: votedId, displayed_ids: displayedIds }),
+            success: function(response) {
+                console.log("Vote saved:", response.message);
+                if (response.final_champion) {
+                    // When done, redirect to hall_of_fame page
+                    window.location.href = "/hall_of_fame";
+                } else {
+                    // Update images with the next matchup
+                    const [championId, challengerId] = response.next_round_ids;
+                    $("#option1-img").attr("src", "https://fimgs.net/mdimg/perfume/375x500." + championId + ".jpg");
+                    $("#option1-btn").data("id", championId);
+
+                    $("#option2-img").attr("src", "https://fimgs.net/mdimg/perfume/375x500." + challengerId + ".jpg");
+                    $("#option2-btn").data("id", challengerId);
+                }
+            },
+            error: function(jqXHR) {
+                console.error("Failed to save vote:", jqXHR.responseText);
+                alert("Failed to save your vote. Error: " + jqXHR.responseText);
+            },
+        });
+    });
+    </script>
+</body>
+</html>

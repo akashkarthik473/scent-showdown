@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Hall of Fame</title>
+</head>
+<body>
+    <a href="/" class="btn btn-primary custom-button" style="position: fixed; top: 20px; right: 20px;">New Game</a>
+    <div class="container mt-5 text-center">
+        <h1>Hall of Fame</h1>
+        {% if champion %}
+        <div class="final-champion mb-4">
+            <h2>Final Champion</h2>
+            <img src="https://fimgs.net/mdimg/perfume/375x500.{{ champion }}.jpg" class="custom-img2" alt="Winner">
+            <p>This fragrance emerged as the ultimate winner!</p>
+        </div>
+        {% endif %}
+
+        <h2>Top Fragrances by Wins</h2>
+        <div class="grid-container">
+            {% for item in top_fragrances %}
+                <div class="grid-item">
+                    <img src="https://fimgs.net/mdimg/perfume/375x500.{{ item.image_id }}.jpg"
+                         alt="Fragrance {{ item.image_id }}"
+                         class="custom-img2">
+                    <p>{{ item.wins }} wins</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

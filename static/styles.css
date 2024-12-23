@@ -1,0 +1,114 @@
+/* Load Klivora font */
+@font-face {
+    font-family: 'Klivora';
+    src: url('/static/fonts/Klivora.otf') format('opentype');
+    font-weight: 900; /* Adjust as needed, depending on the specific weight */
+    font-style: normal; /* If you have an italic variant, use 'italic' instead */
+}
+
+p{
+    font-size: 25px;
+}
+
+/* Global Styles */
+body {
+    background: #121212;
+    color: #E9B553;
+    font-size: clamp(1.2rem, 3vw, 2rem); /* Increased responsive font size */
+    line-height: 1.8; /* Improved line spacing */
+    margin: 0;
+    text-align: center;
+    font-family: 'Klivora', Arial, sans-serif; /* Use custom font */
+    font-weight: 900; /* Regular text weight */
+}
+
+/* Custom Image Styles */
+.custom-img {
+    height: 300px; /* Set a consistent height for the images */
+    object-fit: cover; /* Maintain aspect ratio while filling the height */
+    width: 33%; /* Ensure the width takes the full container width */
+    margin: 0 auto;
+    display: block;
+}
+
+.custom-img2 {
+    height: 150px; /* Set a consistent height for the images */
+    object-fit: cover; /* Maintain aspect ratio while filling the height */
+    width: 7%; /* Ensure the width takes the full container width */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Rest of the styles remain the same */
+.container {
+    background: #121212;
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif; /* Google Font for header */
+    font-weight: 900; /* Bold weight for emphasis */
+    letter-spacing: 2px; /* Add letter spacing */
+    color: #ffffff;
+}
+
+/* Custom Card Styles */
+.custom-card {
+    background-color: #242526;
+    border-radius: 10px;
+    color: #E9B553;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-primary.custom-button {
+    background-color: #d8882b;
+    color: #ffffff; /* Ensure text contrast */
+    border: none;
+    font-size: 20px; /* Increased button font size */
+    padding: 12px 24px; /* Adjusted padding for proportion */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary.custom-button:hover {
+    background-color: #c7781e;
+    transform: scale(1.05);
+}
+
+.btn-primary.custom-button:active {
+    background-color: #65350f;
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: 2px solid #e09633; /* Highlight focus state */
+    outline-offset: 4px; /* Space between button and outline */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px; /* Adjust spacing between items */
+    padding: 16px; /* Optional: Add padding around the grid */
+}
+
+.grid-item {
+    text-align: center;
+    background: #242526; /* Optional: Add a background color */
+    padding: 8px; /* Optional: Add padding inside each grid item */
+
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visuals */
+}
+
+.custom-img2 {
+    width: 100px; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 8px; /* Add spacing below the image */
+}
+
+

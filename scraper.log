@@ -1,0 +1,207 @@
+2025-05-27 14:24:44,155 - INFO - Database setup completed
+2025-05-27 14:24:44,155 - INFO - Starting fragrance data collection...
+2025-05-27 14:25:14,167 - ERROR - An error occurred during scraping: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.fragrantica.com/search/", waiting until "networkidle"
+
+2025-05-27 14:26:05,888 - INFO - Database setup completed
+2025-05-27 14:26:05,888 - INFO - Starting fragrance data collection...
+2025-05-27 14:26:05,888 - INFO - Attempt 1 to load page...
+2025-05-27 14:26:36,811 - WARNING - Element not found on attempt 1: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div.card-product")
+
+2025-05-27 14:26:41,825 - INFO - Attempt 2 to load page...
+2025-05-27 14:27:12,019 - WARNING - Element not found on attempt 2: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div.card-product")
+
+2025-05-27 14:27:34,214 - INFO - Database setup completed
+2025-05-27 14:27:34,214 - INFO - Starting fragrance data collection...
+2025-05-27 14:27:34,214 - INFO - Attempt 1 to load page...
+2025-05-27 14:27:56,727 - INFO - Database setup completed
+2025-05-27 14:27:56,728 - INFO - Starting fragrance data collection...
+2025-05-27 14:27:56,728 - INFO - Attempt 1 to load page...
+2025-05-27 14:28:16,159 - INFO - Database setup completed
+2025-05-27 14:28:16,159 - INFO - Starting fragrance data collection...
+2025-05-27 14:28:16,159 - INFO - Attempt 1 to load page...
+2025-05-27 14:28:47,213 - WARNING - Failed to load page on attempt 1: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div.card-product") to be visible
+
+2025-05-27 14:28:52,223 - INFO - Attempt 2 to load page...
+2025-05-27 14:29:22,381 - WARNING - Failed to load page on attempt 2: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div.card-product") to be visible
+
+2025-05-27 14:29:27,395 - INFO - Attempt 3 to load page...
+2025-05-27 14:29:46,352 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:29:47,086 - INFO - Browser setup completed successfully
+2025-05-27 14:29:47,125 - INFO - Database setup completed successfully
+2025-05-27 14:29:47,125 - INFO - Starting fragrance data collection...
+2025-05-27 14:29:47,125 - INFO - Attempt 1 to load page...
+2025-05-27 14:30:20,089 - WARNING - Timeout on attempt 1: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div.card-product") to be visible
+
+2025-05-27 14:30:25,101 - INFO - Attempt 2 to load page...
+2025-05-27 14:31:00,376 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:31:01,368 - INFO - Browser setup completed successfully
+2025-05-27 14:31:01,407 - INFO - Database setup completed successfully
+2025-05-27 14:31:01,407 - INFO - Starting fragrance data collection...
+2025-05-27 14:31:01,407 - INFO - Attempt 1 to load page...
+2025-05-27 14:31:01,407 - INFO - Loading main page...
+2025-05-27 14:31:02,220 - INFO - Main page status: 200
+2025-05-27 14:31:05,220 - INFO - Loading search page...
+2025-05-27 14:31:05,341 - INFO - Search page status: 403
+2025-05-27 14:31:05,637 - INFO - Saved debug screenshot
+2025-05-27 14:31:05,641 - DEBUG - Page content length: 18536
+2025-05-27 14:31:05,642 - ERROR - Detected anti-bot protection
+2025-05-27 14:31:05,642 - WARNING - Error on attempt 1: Website is blocking automated access
+2025-05-27 14:31:10,652 - INFO - Attempt 2 to load page...
+2025-05-27 14:31:10,653 - INFO - Loading main page...
+2025-05-27 14:31:10,719 - INFO - Main page status: 403
+2025-05-27 14:31:13,724 - INFO - Loading search page...
+2025-05-27 14:31:13,773 - INFO - Search page status: 403
+2025-05-27 14:31:13,947 - INFO - Saved debug screenshot
+2025-05-27 14:31:13,949 - DEBUG - Page content length: 18557
+2025-05-27 14:31:13,950 - ERROR - Detected anti-bot protection
+2025-05-27 14:31:13,950 - WARNING - Error on attempt 2: Website is blocking automated access
+2025-05-27 14:31:18,953 - INFO - Attempt 3 to load page...
+2025-05-27 14:31:18,953 - INFO - Loading main page...
+2025-05-27 14:31:19,001 - INFO - Main page status: 403
+2025-05-27 14:31:22,012 - INFO - Loading search page...
+2025-05-27 14:31:22,082 - INFO - Search page status: 403
+2025-05-27 14:31:22,265 - INFO - Saved debug screenshot
+2025-05-27 14:31:22,267 - DEBUG - Page content length: 18557
+2025-05-27 14:31:22,267 - ERROR - Detected anti-bot protection
+2025-05-27 14:31:22,267 - WARNING - Error on attempt 3: Website is blocking automated access
+2025-05-27 14:31:22,268 - ERROR - An error occurred during scraping: Website is blocking automated access
+2025-05-27 14:31:22,325 - ERROR - Script failed: Website is blocking automated access
+2025-05-27 14:33:31,913 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:33:32,788 - INFO - Browser setup completed successfully
+2025-05-27 14:33:32,817 - INFO - Database setup completed successfully
+2025-05-27 14:33:32,817 - INFO - Starting fragrance data collection...
+2025-05-27 14:33:32,818 - INFO - Attempt 1 to load page...
+2025-05-27 14:33:32,818 - INFO - Loading main page...
+2025-05-27 14:33:36,073 - INFO - Main page status: 200
+2025-05-27 14:33:41,430 - INFO - Loading search page...
+2025-05-27 14:33:41,553 - INFO - Search page status: 403
+2025-05-27 14:33:42,196 - INFO - Saved debug screenshot
+2025-05-27 14:33:42,199 - DEBUG - Page content length: 18451
+2025-05-27 14:33:42,199 - ERROR - Detected anti-bot protection
+2025-05-27 14:33:42,200 - WARNING - Error on attempt 1: Website is blocking automated access
+2025-05-27 14:33:48,233 - INFO - Attempt 2 to load page...
+2025-05-27 14:33:48,233 - INFO - Loading main page...
+2025-05-27 14:33:52,973 - INFO - Main page status: 403
+2025-05-27 14:33:59,052 - INFO - Loading search page...
+2025-05-27 14:33:59,100 - INFO - Search page status: 403
+2025-05-27 14:33:59,279 - INFO - Saved debug screenshot
+2025-05-27 14:33:59,282 - DEBUG - Page content length: 18299
+2025-05-27 14:33:59,283 - ERROR - Detected anti-bot protection
+2025-05-27 14:33:59,283 - WARNING - Error on attempt 2: Website is blocking automated access
+2025-05-27 14:34:19,972 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:34:21,285 - INFO - Browser setup completed successfully
+2025-05-27 14:34:21,331 - INFO - Database setup completed successfully
+2025-05-27 14:34:21,331 - INFO - Starting fragrance data collection...
+2025-05-27 14:34:21,331 - INFO - Attempt 1 to load page...
+2025-05-27 14:34:21,331 - INFO - Loading main page...
+2025-05-27 14:34:26,347 - INFO - Main page status: 200
+2025-05-27 14:34:30,133 - INFO - Loading search page...
+2025-05-27 14:34:30,273 - INFO - Search page status: 403
+2025-05-27 14:34:30,884 - INFO - Saved debug screenshot
+2025-05-27 14:34:30,888 - DEBUG - Page content length: 18409
+2025-05-27 14:34:30,888 - ERROR - Detected anti-bot protection
+2025-05-27 14:34:30,888 - WARNING - Error on attempt 1: Website is blocking automated access
+2025-05-27 14:34:36,240 - INFO - Attempt 2 to load page...
+2025-05-27 14:34:36,240 - INFO - Loading main page...
+2025-05-27 14:34:39,090 - INFO - Main page status: 403
+2025-05-27 14:34:45,053 - INFO - Loading search page...
+2025-05-27 14:34:45,117 - INFO - Search page status: 403
+2025-05-27 14:34:45,329 - INFO - Saved debug screenshot
+2025-05-27 14:34:45,333 - DEBUG - Page content length: 18235
+2025-05-27 14:34:45,333 - ERROR - Detected anti-bot protection
+2025-05-27 14:34:45,333 - WARNING - Error on attempt 2: Website is blocking automated access
+2025-05-27 14:34:52,173 - INFO - Attempt 3 to load page...
+2025-05-27 14:34:52,174 - INFO - Loading main page...
+2025-05-27 14:34:54,896 - INFO - Main page status: 403
+2025-05-27 14:34:58,991 - INFO - Loading search page...
+2025-05-27 14:34:59,050 - INFO - Search page status: 403
+2025-05-27 14:34:59,256 - INFO - Saved debug screenshot
+2025-05-27 14:34:59,260 - DEBUG - Page content length: 18257
+2025-05-27 14:34:59,260 - ERROR - Detected anti-bot protection
+2025-05-27 14:34:59,260 - WARNING - Error on attempt 3: Website is blocking automated access
+2025-05-27 14:34:59,260 - ERROR - An error occurred during scraping: Website is blocking automated access
+2025-05-27 14:34:59,873 - ERROR - Script failed: Website is blocking automated access
+2025-05-27 14:36:25,882 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:36:26,589 - INFO - Browser setup completed successfully
+2025-05-27 14:36:26,634 - INFO - Database setup completed successfully
+2025-05-27 14:36:26,635 - INFO - Starting fragrance data collection...
+2025-05-27 14:36:26,635 - INFO - Attempt 1 to load page...
+2025-05-27 14:36:26,635 - INFO - Loading main page...
+2025-05-27 14:36:36,996 - INFO - Search page status: 200
+2025-05-27 14:36:44,171 - INFO - Saved debug screenshot
+2025-05-27 14:36:44,201 - DEBUG - Page content length: 432345
+2025-05-27 14:36:44,207 - ERROR - Detected anti-bot protection
+2025-05-27 14:36:44,211 - INFO - Waiting 2 minutes before retrying...
+2025-05-27 14:38:44,213 - WARNING - Error on attempt 1: Website is blocking automated access
+2025-05-27 14:38:54,790 - INFO - Attempt 2 to load page...
+2025-05-27 14:38:54,790 - INFO - Loading main page...
+2025-05-27 14:39:07,630 - INFO - Search page status: 403
+2025-05-27 14:39:14,667 - INFO - Saved debug screenshot
+2025-05-27 14:39:14,670 - DEBUG - Page content length: 19709
+2025-05-27 14:39:14,670 - ERROR - Detected anti-bot protection
+2025-05-27 14:39:14,671 - WARNING - Error on attempt 2: Website is blocking automated access
+2025-05-27 14:39:26,059 - INFO - Attempt 3 to load page...
+2025-05-27 14:39:26,059 - INFO - Loading main page...
+2025-05-27 14:39:39,341 - INFO - Search page status: 403
+2025-05-27 14:39:45,830 - INFO - Saved debug screenshot
+2025-05-27 14:39:45,833 - DEBUG - Page content length: 19889
+2025-05-27 14:39:45,833 - ERROR - Detected anti-bot protection
+2025-05-27 14:39:45,833 - WARNING - Error on attempt 3: Website is blocking automated access
+2025-05-27 14:39:45,834 - ERROR - An error occurred during scraping: Website is blocking automated access
+2025-05-27 14:39:46,791 - ERROR - Script failed: Website is blocking automated access
+2025-05-27 14:40:58,958 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:40:59,498 - ERROR - Browser setup failed: Browser.new_context() got an unexpected keyword argument 'viewport_size'
+2025-05-27 14:40:59,499 - ERROR - An error occurred during scraping: Browser.new_context() got an unexpected keyword argument 'viewport_size'
+2025-05-27 14:40:59,706 - ERROR - Script failed: Browser.new_context() got an unexpected keyword argument 'viewport_size'
+2025-05-27 14:41:09,181 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:41:09,678 - ERROR - Browser setup failed: Browser.new_context() got an unexpected keyword argument 'viewport_size'
+2025-05-27 14:41:09,679 - ERROR - An error occurred during scraping: Browser.new_context() got an unexpected keyword argument 'viewport_size'
+2025-05-27 14:41:09,833 - ERROR - Script failed: Browser.new_context() got an unexpected keyword argument 'viewport_size'
+2025-05-27 14:41:32,462 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:41:32,942 - ERROR - Browser setup failed: Browser.new_context() got an unexpected keyword argument 'device_memory'
+2025-05-27 14:41:32,943 - ERROR - An error occurred during scraping: Browser.new_context() got an unexpected keyword argument 'device_memory'
+2025-05-27 14:41:33,365 - ERROR - Script failed: Browser.new_context() got an unexpected keyword argument 'device_memory'
+2025-05-27 14:41:52,027 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:41:52,562 - ERROR - Browser setup failed: Browser.new_context() got an unexpected keyword argument 'device_memory'
+2025-05-27 14:41:52,562 - ERROR - An error occurred during scraping: Browser.new_context() got an unexpected keyword argument 'device_memory'
+2025-05-27 14:41:52,730 - ERROR - Script failed: Browser.new_context() got an unexpected keyword argument 'device_memory'
+2025-05-27 14:42:11,513 - DEBUG - Using proactor: IocpProactor
+2025-05-27 14:42:16,854 - INFO - Browser setup completed successfully
+2025-05-27 14:42:16,889 - INFO - Database setup completed successfully
+2025-05-27 14:42:16,889 - INFO - Starting fragrance data collection...
+2025-05-27 14:42:16,889 - INFO - Attempt 1 to load page...
+2025-05-27 14:42:26,603 - INFO - Search page status: 200
+2025-05-27 14:42:31,618 - INFO - No Cloudflare challenge detected
+2025-05-27 14:42:37,840 - INFO - Saved debug screenshot
+2025-05-27 14:42:37,856 - DEBUG - Page content length: 463170
+2025-05-27 14:42:37,860 - ERROR - Detected anti-bot protection
+2025-05-27 14:42:37,862 - INFO - Waiting 2 minutes before retrying...
+2025-05-27 14:44:37,874 - WARNING - Error on attempt 1: Website is blocking automated access
+2025-05-27 14:44:57,875 - INFO - Attempt 2 to load page...
+2025-05-27 14:45:04,926 - INFO - Search page status: 403
+2025-05-27 14:45:09,939 - INFO - No Cloudflare challenge detected
+2025-05-27 14:45:15,685 - INFO - Saved debug screenshot
+2025-05-27 14:45:15,687 - DEBUG - Page content length: 19569
+2025-05-27 14:45:15,688 - ERROR - Detected anti-bot protection
+2025-05-27 14:45:15,688 - WARNING - Error on attempt 2: Website is blocking automated access
+2025-05-27 14:45:34,971 - INFO - Attempt 3 to load page...
+2025-05-27 14:45:42,067 - INFO - Search page status: 403
+2025-05-27 14:45:47,072 - INFO - No Cloudflare challenge detected
+2025-05-27 14:45:53,457 - INFO - Saved debug screenshot
+2025-05-27 14:45:53,468 - DEBUG - Page content length: 19526
+2025-05-27 14:45:53,469 - ERROR - Detected anti-bot protection
+2025-05-27 14:45:53,469 - WARNING - Error on attempt 3: Website is blocking automated access
+2025-05-27 14:45:53,469 - ERROR - An error occurred during scraping: Website is blocking automated access
+2025-05-27 14:45:54,033 - ERROR - Script failed: Website is blocking automated access
